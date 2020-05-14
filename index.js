@@ -116,10 +116,11 @@ console.log(temperatureInF(24, 'C'));
  *   email: "leia@leia.com",
  * }
  */
-function makePersonObject( /* code here */ ) {
-    /* code here */
+function makePersonObject(id, name, email) { //add arguments
+    return { id, name, email }; // return statement
 }
-
+const myPerson = makePersonObject(5, 'Leia', 'leia@leia.com');
+console.log(myPerson);
 /**
  * ### Challenge `
     getName `
@@ -141,7 +142,7 @@ function makePersonObject( /* code here */ ) {
 as the argument, *
 the returned value should look like `Hello, my name is Leia`.*/
 
-function getName( /* code here */ ) {
+function getName({ name }) { // name argument
     /* code here */
 }
 
